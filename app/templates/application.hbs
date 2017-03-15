@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>Model Names</h1>
+{{#each modelNames as |name|}}
+  <div class="blockquote">{{name}}</div>
+{{/each}}
 
-{{outlet}}
+<h2>Fastboot model</h2>
+
+{{model.title}} <br>
+{{model.body}}
